@@ -2,9 +2,9 @@ import os
 import discord
 import random
 from dotenv import load_dotenv
-from acc.keep_alive import keep_alive
-from acc import Config
-from acc.model import send_message
+from app.keep_alive import keep_alive
+from app import Config
+from app.model import send_message
 
 load_dotenv()
 
