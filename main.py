@@ -2,7 +2,7 @@ import os
 import discord
 import random
 from dotenv import load_dotenv
-from app import keep_alive
+from app.keep_alive import keep_alive
 from app import Config
 from app.model import send_message
 
@@ -52,6 +52,6 @@ async def on_message(message):
 
 
 if __name__ == '__main__':
-    keep_alive.keep_alive()
+    keep_alive()
     client.run(token)
 
