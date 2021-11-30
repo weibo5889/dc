@@ -18,7 +18,7 @@ async def on_ready():
     print(f'目前登入身份：{client.user}')
 
 
-c = ['https://www.youtube.com/watch?v=DLAWa4i_QEI****&feature=youtu.be','小月','訂閱我的youtobe','吉','大吉','小吉','危','大危','超激危!!!','超激不危']
+f = ['https://www.youtube.com/watch?v=DLAWa4i_QEI****&feature=youtu.be','小月','訂閱我的youtobe','吉','大吉','小吉','危','大危','超激危!!!','超激不危']
 
 
 # 調用 event 函式庫
@@ -37,7 +37,7 @@ async def on_message(message):
 
     if m.replace('!', '').find('圖片') != -1:
         if m == '!圖片':
-            random_number = random.randrange(1, 7)
+            random_number = r.randrange(1, 7)
             await message.channel.send(file = discord.File(os.path.join(Config.PICDIR, f'pc-{random_number}.jpg')))
         elif m == '!胡爾芳圖片':
             await message.channel.send(file=discord.File(os.path.join(Config.PICDIR, 'the_hu.jpg')))
@@ -55,7 +55,7 @@ async def on_message(message):
         send_message(m = m, message = message)
     if m =="!抽籤":
         j = r.randrange(1,11)
-        await message.channel.send(f'{c}')
+        await message.channel.send(f[j])
 
 if __name__ == 'main':
     keep_alive()
