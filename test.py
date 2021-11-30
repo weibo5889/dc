@@ -1,4 +1,4 @@
 import random as r 
-
-g = r.randrange(1,7)
-print(g)
+h = ['c','a','s','b',]
+g = r.randrange(1,5)
+print(h[g])
