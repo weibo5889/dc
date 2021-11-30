@@ -51,7 +51,7 @@ async def on_message(message):
         if m == '!高好文圖片':
             await message.channel.send(file=discord.File(os.path.join(Config.PICDIR, 'w.png')))
         if m == '!咪卡圖片':
-            for i in r.range(1, 5):
+            for i in r.randrange(1, 5):
                 await message.channel.send(file=discord.File(os.path.join(Config.PICDIR, f'dog-{i}.jpg')))
         if m =="!薩摩耶圖片":
             await message.channel.send(file=discord.File(os.path.join(Config.PICDIR, f'sa-{i}.jpg')))
