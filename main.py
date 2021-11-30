@@ -50,7 +50,8 @@ async def on_message(message):
         if m == '!狗狗圖片':
             for i in range(1, 3):
                 await message.channel.send(file=discord.File(os.path.join(Config.PICDIR, f'dog-{i}.jpg')))
-
+        if m =="!105":
+            await message.channel.send(file=discord.File(os.path.join(Config.PICDIR,"superidol.gif")))
     else:
         await message.channel.send(send_message(m = m, message = message))
         

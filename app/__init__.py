@@ -12,7 +12,7 @@ class Config():
     s3 = '你不要密我了！🤢🤢我有男盆友了～😤😊🥰🥰掰掰唷 你要加油～😼😼😼考上好大學唷 😻😻😻'
     MESSAGR_DIR = {
         f'{M_PREFIX}排球' : ['接球!','殺球!',"舉球!"],
-        f'{M_PREFIX}!抽籤' : ['https://www.youtube.com/watch?v=DLAWa4i_QEI****&feature=youtu.be','小月','訂閱我的youtobe','吉','大吉','小吉','危','大危','超激危!!!','超激不危'],
+        f'{M_PREFIX}抽籤' : ['https://www.youtube.com/watch?v=DLAWa4i_QEI****&feature=youtu.be','小月','訂閱我的youtobe','吉','大吉','小吉','危','大危','超激危!!!','超激不危'],
         f'{M_PREFIX}救救命' : ['🏷抽籤: \n!抽籤','🏐玩排球: \n!排球',"📄逐字稿: \n!逐字稿","🎞照片類: \n!圖片 \n!葉煥軍 \n!胡爾芳 \n!胡爾芳圖片 \n!憨包 \n!yoga "],
         f'{M_PREFIX}逐字稿' : [s1, s2, s3,'有病要看醫生啊','你的感覺我哪次沒考慮過 但你的偏激真的有點噁==','看你是先被鬼上還是先被我上啦 ^^','xji6vm06j06'],
         f'{M_PREFIX}葉煥軍' : ['胡爾芳智障'],
