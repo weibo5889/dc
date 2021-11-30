@@ -34,7 +34,9 @@ async def on_message(message):
 
 
     m = message.content
-    
+    if m == "!105":
+        await message.channel.send(file=discord.File(os.path.join(Config.PICDIR,"superidol.gif")))
+        
     if m.replace('!', '').find('圖片') != -1:
         if m == '!圖片':
             random_number = r.randrange(1, 7)
