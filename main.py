@@ -50,16 +50,14 @@ async def on_message(message):
         if m == '!狗狗圖片':
             for i in range(1, 3):
                 await message.channel.send(file=discord.File(os.path.join(Config.PICDIR, f'dog-{i}.jpg')))
-    if m =="!抽籤":
-        j = r.randrange(1,11)
-        await message.channel.send(k[j])
 
     else:
-        send_message(m = m, message = message)
+        await message.channel.send(send_message(m = m, message = message))
+        
 
     
 
-if __name__ == 'main':
+if __name__ == '__main__':
     keep_alive()
     client.run(token)
 
