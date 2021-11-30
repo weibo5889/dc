@@ -1,5 +1,7 @@
 import discord
 import random
+
+from discord import channel
 from . import Config
 
 def send_message(m : str, message : discord.message) -> str:
@@ -8,9 +10,10 @@ def send_message(m : str, message : discord.message) -> str:
     message_dir = Config.MESSAGR_DIR
     prefix_message_dir = Config.PREFIX_MESSAGE_DIR
 
-
+ 
     if m in message_dir:
         list_len = len(message_dir[m])
+   
 
         if list_len == 1:
             return message_dir[m][0]
@@ -32,8 +35,7 @@ def send_message(m : str, message : discord.message) -> str:
     elif m == '!標記':
 
         return f'<@!{message.author.id}>'
-    
-
+ 
 
 
     

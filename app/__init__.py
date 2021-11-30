@@ -32,7 +32,7 @@ class Config():
 
     PREFIX_MESSAGE_DIR = {
         f'{M_PREFIX}幫我決定' : ['好啊',"不要"],
-        f'{M_PREFIX}我會' : ['會','不會','可能ㄛ'],
+        f'{M_PREFIX}會不會' : ['會','不會','可能ㄛ'],
     }
 
 
