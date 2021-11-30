@@ -6,6 +6,8 @@ from app.keep_alive import keep_alive
 from app import Config
 from app.mod import send_message
 
+
+
 load_dotenv()
 
 token = os.environ.get('TOKEN')
@@ -18,7 +20,7 @@ async def on_ready():
     print(f'目前登入身份：{client.user}')
 
 
-k = ['https://www.youtube.com/watch?v=DLAWa4i_QEI****&feature=youtu.be','小月','訂閱我的youtobe','吉','大吉','小吉','危','大危','超激危!!!','超激不危']
+
 
 
 # 調用 event 函式庫
@@ -34,6 +36,9 @@ async def on_message(message):
 
     
     m = message.content
+    
+    
+    
     if m == "!105":
         await message.channel.send(file=discord.File(os.path.join(Config.PICDIR,"superidol.gif")))
     if m == "!可愛":
