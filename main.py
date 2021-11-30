@@ -57,7 +57,6 @@ async def on_message(message):
 
     
 
-if __name__ == '__main__':
-    keep_alive()
-    client.run(token)
+keep_alive()
+client.run(token)
 
