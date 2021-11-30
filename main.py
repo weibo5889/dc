@@ -3,8 +3,8 @@ import discord
 import random
 from dotenv import load_dotenv
 from app.keep_alive import keep_alive
-from __init__ import Config
-from model import send_message
+from app import Config
+from app.model import send_message
 
 load_dotenv()
 
