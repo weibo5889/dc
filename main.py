@@ -32,11 +32,12 @@ async def on_message(message):
     if message is None:
         print('None')
 
-
+    
     m = message.content
     if m == "!105":
         await message.channel.send(file=discord.File(os.path.join(Config.PICDIR,"superidol.gif")))
-        
+    if m == "!可愛":
+        await message.channel.send(file=discord.File(os.path.join(Config.PICDIR,"cute.gif")))
     if m.replace('!', '').find('圖片') != -1:
         if m == '!圖片':
             random_number = r.randrange(1, 7)
@@ -49,11 +50,11 @@ async def on_message(message):
             await message.channel.send(file=discord.File(os.path.join(Config.PICDIR, 'the_8.jpg')))
         if m == '!高好文圖片':
             await message.channel.send(file=discord.File(os.path.join(Config.PICDIR, 'w.png')))
-        if m == '!狗狗圖片':
-            for i in range(1, 3):
+        if m == '!咪卡圖片':
+            for i in r.range(1, 5):
                 await message.channel.send(file=discord.File(os.path.join(Config.PICDIR, f'dog-{i}.jpg')))
-        if m =="!105圖片":
-            await message.channel.send(file=discord.File(os.path.join(Config.PICDIR,"superidol.gif")))
+        if m =="!薩摩耶圖片":
+            await message.channel.send(file=discord.File(os.path.join(Config.PICDIR, f'sa-{i}.jpg')))
     else:
         await message.channel.send(send_message(m = m, message = message))
         
