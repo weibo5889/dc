@@ -54,7 +54,8 @@ async def on_message(message):
                 i = r.randrange(1, 5)
                 await message.channel.send(file=discord.File(os.path.join(Config.PICDIR, f'dog-{i}.jpg')))
         if m =="!薩摩耶圖片":
-            await message.channel.send(file=discord.File(os.path.join(Config.PICDIR, f'sa-{i}.jpg')))
+            d = r.randrange(1, 5)
+            await message.channel.send(file=discord.File(os.path.join(Config.PICDIR, f'sa-{d}.jpg')))
     else:
         await message.channel.send(send_message(m = m, message = message))
         
