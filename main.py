@@ -1,6 +1,6 @@
 import os
 import discord
-import random
+import random as r
 from dotenv import load_dotenv
 from app.keep_alive import keep_alive
 from app import Config
@@ -16,6 +16,10 @@ client = discord.Client()
 @client.event
 async def on_ready():
     print(f'目前登入身份：{client.user}')
+
+
+c = ['https://www.youtube.com/watch?v=DLAWa4i_QEI****&feature=youtu.be','小月','訂閱我的youtobe','吉','大吉','小吉','危','大危','超激危!!!','超激不危']
+
 
 # 調用 event 函式庫
 @client.event
@@ -49,9 +53,11 @@ async def on_message(message):
 
     else:
         send_message(m = m, message = message)
+    if m =="!抽籤":
+        j = r.randrange(1,11)
+        await message.channel.send(f'{c}')
 
-
-if __name__ == '__init__':
+if __name__ == 'main':
     keep_alive()
     client.run(token)
 
